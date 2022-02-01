@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='nextep.css')}}">
+</head>
+
+<body>
+	<style type="text/css">
+		body {
+			background: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat;
+			background-size: cover;
+		}
+	</style>
+	<div class="wrapper">
+		<input checked type=radio name="slider" id="slide1" />
+		<input type=radio name="slider" id="slide2" />
+		<input type=radio name="slider" id="slide3" />
+		<input type=radio name="slider" id="slide4" />
+		<input type=radio name="slider" id="slide5" />
+
+		<div class="slider-wrapper">
+			<div class=inner>
+				<article>
+					<div class="info top-left">
+						<h3>Nextep Watch</h3>
+					</div>
+					<img src="paint.png" />
+				</article>
+
+				<article>
+					<div class="info bottom-right">
+						<h3>Cameron Highland</h3>
+					</div>
+					<img src="image02.jpeg" />
+				</article>
+
+				<article>
+					<div class="info bottom-left">
+						<h3>New Delhi</h3>
+					</div>
+					<img src="image04.jpeg" />
+				</article>
+
+				<article>
+					<div class="info top-right">
+						<h3>Ladakh</h3>
+					</div>
+					<img src="image05.jpg" />
+				</article>
+
+				<article>
+					<div class="info bottom-left">
+						<h3>Nubra Valley</h3>
+					</div>
+					<img src="imagee.jpg" />
+				</article>
+			</div>
+			<!-- .inner -->
+		</div>
+		<!-- .slider-wrapper -->
+
+		<div class="slider-prev-next-control">
+			<label for=slide1></label>
+			<label for=slide2></label>
+			<label for=slide3></label>
+			<label for=slide4></label>
+			<label for=slide5></label>
+		</div>
+		<!-- .slider-prev-next-control -->
+
+		<div class="slider-dot-control">
+			<label for=slide1></label>
+			<label for=slide2></label>
+			<label for=slide3></label>
+			<label for=slide4></label>
+			<label for=slide5></label>
+		</div>
+		<!-- .slider-dot-control -->
+	</div>
+	<!-- . -->
+	<!-- . -->
+	<!-- . -->
+	<div id="conteneur">
+		<p><button class="bouton4"><a href="/base"><strong>Accueil</strong></a></button></p>
+		<p><button class="bouton6"><a href="classement.html"><strong>Classement</strong></a></button></p>
+		<p><button class="bouton1"><a href="/signup"><strong>Inscription</strong></a></button></p>
+		<p><button class="bouton2"><a href="nextepp3.html"><strong>Mes activitées</strong></a></button></p>
+		<p><button class="bouton3"><a href="/login"><strong>Me connecter</strong></a></button></p>
+	</div>
+
+	</div>
+	<div id="conteneur2">
+		<div class="élément5">
+
+		</div>
+		<div class="élément4">
+			<img src="im.png" />
+		</div>
+		<div class="élément3">
+
+		</div>
+
+	</div>
+	<div class="container-fluid">
+		{% block content%}
+		{% endblock %}
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
